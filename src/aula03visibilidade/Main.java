@@ -8,13 +8,17 @@ public class Main {
 
         c1.modelo = "Bic cristal";
         c1.cor = "Azul";
+        //c1.ponta = 0.5f; atributo privado
+        c1.carga = 80;
+        //c1.tampada = false;
+        // Posso mexer pq mesmo protegido estou usando na classe dele
 
-        // Não posso mexer na ponta, pois ele é privado.
-        // Não posso mexer na carga, pois ele é protegido
-        // Essa regra vale para os demais atributos protegidos e privados.
-
-        // O mesmo vale para os métodos, sendo possível mexer somente os métodos públicos.
+        c1.destampar();
+        //c1.tampar();
+        // Mesmo o atributo tampada sendo privado podemos mexer nele usando os metodos dentro da classe
 
         c1.status();
+        c1.rabiscar();
+
     }
 }

@@ -5,10 +5,10 @@ public class Caneta {
     public String modelo;
     public String cor;
     private float ponta;
-    private int carga;
-    public boolean tampada;
+    protected int carga;
+    private boolean tampada;
 
-    void status(){
+    public void status(){
         System.out.println("Modelo: " +this.modelo);
         System.out.println("Uma caneta " +this.cor);
         System.out.println("Ponta: " +this.ponta);
