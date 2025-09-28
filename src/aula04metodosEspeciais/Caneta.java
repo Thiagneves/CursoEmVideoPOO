@@ -1,17 +1,27 @@
 package aula04metodosEspeciais;
 
+import java.sql.SQLOutput;
+
 public class Caneta {
     public String modelo;
     public String cor;
     private double ponta;
-    boolean tampa;
+    private boolean tampa;
 
     // Construtor
-    public void construtor(String m, String c, double p){
+    public void Caneta(String m, String c, Double p){
         setModelo(m);
         setCor(c);
         setPonta(p);
-        tampa = true;
+        tampar();
+    }
+
+    public void status(){
+        System.out.println("SOBRE A CANETA: ");
+        System.out.println("Modelo: " +getModelo());
+        System.out.println("Cor: " +getCor());
+        System.out.println("Ponta: " +getPonta());
+        System.out.println("Tampada: " +tampa);
     }
 
     public String getModelo(){
@@ -37,4 +47,13 @@ public class Caneta {
     private void setPonta(double p){
         this.ponta = p;
     }
+
+    public void tampar(){
+        this.tampa = true;
+    }
+
+    public void destampar(){
+        this.tampa = false;
+    }
+
 }
