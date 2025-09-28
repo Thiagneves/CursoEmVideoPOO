@@ -9,7 +9,7 @@ public class Caneta {
     private boolean tampa;
 
     // Construtor
-    public void Caneta(String m, String c, Double p){
+    public void caneta(String m, String c, Double p){
         setModelo(m);
         setCor(c);
         setPonta(p);
